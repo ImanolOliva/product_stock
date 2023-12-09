@@ -21,4 +21,5 @@ public class CustomerDTO {
 
     private Integer dni;
 
+    private Boolean state;
 }

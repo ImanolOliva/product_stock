@@ -22,5 +22,5 @@ public class ProductDTO {
 
     private Integer quantityAvailable;
 
-
+    private Boolean state;
 }

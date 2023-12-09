@@ -28,5 +28,8 @@ public class Customer {
 
     private Integer dni;
 
+    private Boolean state;
+
+
 
 }

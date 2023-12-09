@@ -4,18 +4,19 @@ import com.todocode.bazar.controller.dto.ProductDTO;
 import com.todocode.bazar.repository.entity.Product;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface ProductService {
 
     Product productCreate (Product product);
 
-    List<ProductDTO> getAllProduct();
+    List<Product> getAllProduct();
 
-    ProductDTO getByIdProduct (Long id);
+    Optional<Product> getByIdProduct (Long id);
 
-    Boolean deleteProduct(Long id);
+    void deleteProduct(Long id);
 
-    ProductDTO editProduct (Product product);
+    Product editProduct (Long id,Product product);
 
 
 

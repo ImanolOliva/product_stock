@@ -30,5 +30,6 @@ public class Sale{
     @OneToOne
     private Customer customer;
 
+    private Boolean state;
 
 }

@@ -1,10 +1,20 @@
 package com.todocode.bazar.exceptions;
 
-public class ExceptionsCustom extends Throwable{
+import org.springframework.http.HttpStatus;
 
-    private String message;
+public  abstract class ExceptionsCustom extends RuntimeException{
 
-    public ExceptionsCustom(String message){
-        this.message = message;
-    }
+    public abstract String getMessage();
+
+
+    public abstract HttpStatus getStatus();
+
+
+    public abstract ExceptionTypes getTypeMessageCode();
+
+
+    public abstract String getTitleMessageCode();
+
+
+
 }
